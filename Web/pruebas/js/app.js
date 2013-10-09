@@ -173,9 +173,9 @@
     }
 	function init() 
 	{
-<<<<<<< HEAD
+
 		console.log("init test");
-=======
+
         /*if (!canvasSupport()) {
             return;
         }*/
@@ -188,7 +188,7 @@
 		ctx.height=document.body.clientHeight;
         
         initStats();
->>>>>>> 682a2a17f341f8da89ab250d6eb5239c0101b1b3
+
 		createLogoGDGLima();
         paint();
 
