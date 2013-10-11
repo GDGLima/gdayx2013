@@ -51,7 +51,7 @@ public class GDayx2013Activity extends SherlockFragmentActivity  {
 		
 		placeTab=actionBar.newTab();
 		placeTab.setText("Lugar");
-		placeTab.setTabListener(new MyTabListener(sponsor));
+		placeTab.setTabListener(new MyTabListener(place));
 		
 		actionBar.addTab(agendaTap);
 		actionBar.addTab(speakersTab);
