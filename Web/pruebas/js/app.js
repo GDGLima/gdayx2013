@@ -24,6 +24,7 @@
     var vy=0.5;
     var arrPosXY=[];
     var arrImages=[];
+    var arrLogoGDG=[];
     //var first=false;
 
 	window.requestAnimFrame = (function()
@@ -149,7 +150,39 @@
  	function createLogoGDGLima()
  	{
  		loadImages();
+        arrLogoGDG=[];
+        for (var k = 0; k < 30; k++) 
+        {
+            arrLogoGDG[k]={};
+            for (var j = 0; j < 10; j++) 
+            {
+                arrLogoGDG[k][j]=getImage();
+              //  console.log("img "+k+" "+j+" "+arrLogoGDG[k][j]);
+            };
+        };
+        renderLogo();
  	}
+    function renderLogo()
+    {
+        var img;
+        var posX=0;
+        for (var i = 0; i < 30; i++) 
+        {
+            for (var j = 0; j < 10; j++) 
+            {
+                img=arrLogoGDG[i][j];
+                ctx.drawImage(img,(100+100*posX),250);
+                posX+=50;
+            };
+            posX=0;
+        };
+    }
+
+    function getImage()
+    {
+        var pos=Math.floor(Utils.randomByRange(0,(arrImages.length-1)));
+        return arrImages[pos];
+    }
  	function redraw()
     {
     	var date=new Date();
@@ -160,7 +193,7 @@
         ctx.drawImage(bg,300,100);
         ctx.restore();
         //px=arrPosXY[0][0][0]+Math.cos(tm*0.003)*2;
-        //∫py=arrPosXY[0][0][1]+Math.cos(tm*0.002)*2;
+        //py=arrPosXY[0][0][1]+Math.cos(tm*0.002)*2;
         var countX=0;
         var countY=0;
         var countImgX=0;
@@ -299,7 +332,7 @@
 
         initStats();
 		createLogoGDGLima();
-        paint();
+       // paint();
 
 	}
 
