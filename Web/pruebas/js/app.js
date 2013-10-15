@@ -14,7 +14,7 @@
 	var imgPlay;
 	var imgYoutube,imgDart,imgPlus,imgGmail, imgGoogle,
         imgSound,imgEarth;
-    var bg;
+    var bg,bgGBG;
     var PATHY=100;
     var DY=40;
 
@@ -25,6 +25,11 @@
     var arrPosXY=[];
     var arrImages=[];
     var arrLogoGDG=[];
+    var arrLogoGBG=[];
+    var count=0;
+    var total=12;
+    var totalR=18;
+    var totalC=10;
     //var first=false;
 
 	window.requestAnimFrame = (function()
@@ -46,6 +51,7 @@
     {
         var cImg=0;
         bg=new Image();
+        bgGBG=new Image();
     	imgChrome=new Image();
     	imgAndroid=new Image();
     	imgGdrive=new Image();
@@ -58,78 +64,103 @@
         imgSound=new Image();
         imgEarth=new Image();
         imgGoogle=new Image();
-
+        arrImages=new Array();
         //transparencia
         bg.onload=function()
         {
+            var s=0.5;
             ctx.save();
+            ctx.scale(s,s);
             ctx.globalAlpha = 0.2;
-            ctx.drawImage(bg,300,100);
+            ctx.drawImage(bg,5/s,100/s);
             ctx.restore();
-            cImg++;
+        }
+
+        bgGBG.onload=function()
+        {
+            var s=0.1;
+            ctx.save();
+            ctx.scale(s,s);
+            ctx.globalAlpha = 0.2;
+            ctx.drawImage(bgGBG,5/s,400/s);
+            ctx.restore();
         }
     	imgChrome.onload=function()
     	{
-    		ctx.drawImage(imgChrome,50,PATHY);
-            cImg++;
+    		ctx.drawImage(imgChrome,0,0);
+            arrImages.push(imgChrome);
+            console.log("arr "+arrImages.length);
+            next();
     	}
     	imgAndroid.onload=function()
     	{
-    		ctx.drawImage(imgAndroid,100,PATHY);
-            cImg++;
+    		//ctx.drawImage(imgAndroid,100,PATHY);
+            arrImages.push(imgAndroid);
+            next();
     	}
     	imgGdrive.onload=function()
     	{
-    		ctx.drawImage(imgGdrive,150,PATHY);
-            cImg++;
+    		//ctx.drawImage(imgGdrive,150,PATHY);
+            arrImages.push(imgGdrive);
+            next();
     	}
     	imgGame.onload=function()
     	{
-    		ctx.drawImage(imgGame,200,PATHY);
-            cImg++;
+    		//ctx.drawImage(imgGame,200,PATHY);
+            arrImages.push(imgGame);
+            next();
     	}
     	imgPlay.onload=function()
     	{
-    		ctx.drawImage(imgPlay,250,PATHY);
-            cImg++;
+    		//ctx.drawImage(imgPlay,250,PATHY);
+            arrImages.push(imgPlay);
+            next();
     	}
     	imgYoutube.onload=function()
     	{
-    		ctx.drawImage(imgYoutube,50,PATHY+DY);
-            cImg++;
-    	}
+    		//ctx.drawImage(imgYoutube,50,PATHY+DY);
+    	   arrImages.push(imgYoutube);
+           next();
+        }
         imgDart.onload=function()
         {
-            ctx.drawImage(imgDart,100,PATHY+DY);
-            cImg++;
+           // ctx.drawImage(imgDart,100,PATHY+DY);
+            arrImages.push(imgDart);
+            next();
         }
         imgPlus.onload=function()
         {
-            ctx.drawImage(imgPlus,150,PATHY+DY);
-            cImg++;
+           // ctx.drawImage(imgPlus,150,PATHY+DY);
+            arrImages.push(imgPlus);
+            next();
         }
         imgGmail.onload=function()
         {
-            ctx.drawImage(imgGmail,200,PATHY+DY);
-            cImg++;
+          //  ctx.drawImage(imgGmail,200,PATHY+DY);
+            arrImages.push(imgGmail);
+            next();
         }
         imgSound.onload=function()
         {
-            ctx.drawImage(imgSound,250,PATHY+DY);
-            cImg++;
+            //ctx.drawImage(imgSound,250,PATHY+DY);
+            arrImages.push(imgSound);
+            next();
         }
         imgEarth.onload=function()
         {
-            ctx.drawImage(imgEarth,50,PATHY+2*DY);
-            cImg++;
+            //ctx.drawImage(imgEarth,50,PATHY+2*DY);
+            arrImages.push(imgEarth);
+            next();
         }
         imgGoogle.onload=function()
         {
-            ctx.drawImage(imgGoogle,100,PATHY+2*DY);
-            cImg++;
+            //ctx.drawImage(imgGoogle,100,PATHY+2*DY);
+            arrImages.push(imgGoogle);
+            next();
         }
 
         bg.src="img/logo_gdg_devfest.png";
+        bgGBG.src="img/logo_gbg_devfest.png";
     	imgChrome.src="img/chrome.png";
     	imgAndroid.src="img/android.png";
     	imgGdrive.src="img/gdrive.png";
@@ -142,48 +173,94 @@
         imgGoogle.src="img/google.png";
         imgSound.src="img/gsound.png";
         imgEarth.src="img/gearth.png";
-
-        arrImages=[imgChrome,imgAndroid,imgGdrive,imgGame,imgPlay,
-        imgDart,imgPlus,imgGmail,imgYoutube,imgGoogle,imgSound];
-        arrImages=Utils.shuffleArray(arrImages);
     }
- 	function createLogoGDGLima()
- 	{
- 		loadImages();
+    function next()
+    {
+       // console.log("next "+count);
+        count++;
+        if(count>=total)
+        {
+            createLogoGDGLima();
+            createLogoGBGLima();
+        }
+    }
+    function createLogoGBGLima()
+    {
+       arrLogoGBG=new Array(); 
+       var nX=0;
+       var nY=0;
+       var img;
+       var r=65;
+       for (var k = 0; k < 4; k++) 
+       {
+            for (var i = 0; i < 2*Math.PI ; i+=(15*Math.PI/180))
+           {
+                nX=800+r*Math.cos(i);
+                nY=200+r*Math.sin(i);
+                arrLogoGBG[i]={x:nX,y:nY,data:getImage()};
+                ctx.drawImage(arrLogoGBG[i].data,nX,nY);
+           };
+           r+=20;
+       };
+
+
+    }
+    function createLogoGDGLima()
+    {
+        console.log("createLogoGDGLima");
         arrLogoGDG=[];
-        for (var k = 0; k < 30; k++) 
+        for (var k = 0; k < totalR; k++) 
         {
             arrLogoGDG[k]={};
-            for (var j = 0; j < 10; j++) 
+            for (var j = 0; j < totalC; j++) 
             {
                 arrLogoGDG[k][j]=getImage();
+                arrLogoGDG[k][j].scale=Utils.randomByRange(0.5,1.1);
               //  console.log("img "+k+" "+j+" "+arrLogoGDG[k][j]);
             };
         };
         renderLogo();
- 	}
+    } 
+ 	
     function renderLogo()
     {
-        var img;
-        var posX=0;
-        for (var i = 0; i < 30; i++) 
+        var aux;
+        var nX=0;
+        var nY=0;
+        var pX=220;
+        var scale=1;
+        for (var i = 0; i < totalR; i++) 
         {
-            for (var j = 0; j < 10; j++) 
+            for (var j = 0; j < totalC; j++) 
             {
-                img=arrLogoGDG[i][j];
-                ctx.drawImage(img,(100+100*posX),250);
-                posX+=50;
+                aux=arrLogoGDG[i][j];
+                scale=aux.scale;
+                ctx.save();
+                ctx.scale(scale,scale);
+                ctx.drawImage(arrLogoGDG[i][j],(pX+nX)/scale,(100+nY)/scale);
+                ctx.restore();
+                console.log(">>> "+scale);
+                nX+=18;
             };
-            posX=0;
+            if(i<(totalR/2-1))
+            {
+              pX+=17;  
+            }else
+            {
+              pX-=17; 
+            }
+            nX=0;
+            nY+=31;
         };
     }
 
     function getImage()
     {
         var pos=Math.floor(Utils.randomByRange(0,(arrImages.length-1)));
+        console.log("getImage pos "+pos);
         return arrImages[pos];
     }
- 	function redraw()
+ 	/*function redraw()
     {
     	var date=new Date();
         var tm=date.getTime();
@@ -206,14 +283,14 @@
         	{
 	        	px=100+countX+countImgX+Math.cos(tm*0.003)*2;
 	        	py=50+countImgY+Math.cos(tm*0.002)*2;
-                /*if(!first)
+                //if(!first)
                 {
                     rd=Math.floor(imgRandom());
                     ctx.drawImage(arrImages[rd],px,py);  
                 }else
                 {
 
-                }*/
+                }
                 ctx.drawImage(arrImages[j],px,py); 
 
 	        	countImgX+=arrImages[j].width+5;
@@ -229,7 +306,7 @@
         	countImgX=0;
         	countImgY+=40;
 
-        };
+        };*/
         /*for (var i = 0; i < arrImages.length; i++) {
         	px=arrPosXY[0][i][0]+Math.cos(tm*0.003)*2;
         	py=arrPosXY[0][i][1]+Math.cos(tm*0.002)*2;
@@ -266,12 +343,12 @@
         ctx.drawImage(imgEarth,50+px,PATHY+2*DY);
         ctx.drawImage(imgGoogle,100+px,PATHY+2*DY);*/
         //px+=vx;
-    }
+   // }
     function paint()
     {
         requestAnimationFrame(paint);
         ctx.clearRect(0,0,ctx.width,ctx.height);
-        redraw();
+       // redraw();
 
     }
     function initStats()
@@ -304,6 +381,23 @@
 		ctx.width=document.body.clientWidth;
 		ctx.height=document.body.clientHeight;
         
+
+        initStats();
+		loadImages();
+       // paint();
+
+	}
+
+    //-------------------
+    function imgRandom()
+    {
+        var i=Utils.randomByRange(0,(arrImages.length-1));
+        console.log("i "+i);
+        return i;
+    }
+
+})();
+/*
         arrPosXY=[];
         arrPosXY[0]= [[300,100],[340,100],[380,100],[410,100],
         [450,100],[490,100],[500,100],[510,100],[520,100],
@@ -328,20 +422,4 @@
         arrPosXY[5]= [[320,350],[360,350],[400,350],[430,350],
         [470,350],[510,350],[520,350],[530,350],[540,350],
         [550,350],[560,350]];
-
-
-        initStats();
-		createLogoGDGLima();
-       // paint();
-
-	}
-
-    //-------------------
-    function imgRandom()
-    {
-        var i=Utils.randomByRange(0,(arrImages.length-1));
-        console.log("i "+i);
-        return i;
-    }
-
-})();
+*/
