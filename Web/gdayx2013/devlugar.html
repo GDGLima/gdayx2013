@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
     -->
 
-    <title>DevFest & GDayX</title>
+    <title>DevFest | Lugar</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
@@ -49,118 +49,72 @@
 <div class="container">
 
       <div class="starter-template">
-        <h1 style="font-size:63px;">DevFest & GDayX Lima 2013</h1>
-        <p class="lead">Los dos mejores eventos en un sólo Festival.</p>
-        <p class="lead" id="counter"></p>
+        <h1 style="font-size:70px;">DevFest Lima 2013</h1>
+        <p class="lead">Sólo para desarrolladores como tu.<br> <b>#devfest</b></p>
       </div>
-
-<!-- contador -->
-<div align="center">
-<script languaje="JavaScript">
-function getTime() {
-now = new Date();
-y2k = new Date("Nov 30 2013 23:59:59");
-days = (y2k - now) / 1000 / 60 / 60 / 24;
-daysRound = Math.floor(days);
-hours = (y2k - now) / 1000 / 60 / 60 - (24 * daysRound);
-hoursRound = Math.floor(hours);
-minutes = (y2k - now) / 1000 /60 - (24 * 60 * daysRound) - (60 * hoursRound);
-minutesRound = Math.floor(minutes);
-seconds = (y2k - now) / 1000 - (24 * 60 * 60 * daysRound) - (60 * 60 * hoursRound) - (60 * minutesRound);
-secondsRound = Math.round(seconds);
-sec = (secondsRound == 1) ? " segundo" : " segundos";
-min = (minutesRound == 1) ? " minuto" : " minutos, ";
-hr = (hoursRound == 1) ? " hora" : " horas, ";
-dy = (daysRound == 1)  ? " día" : " d&iacute;as, "
-document.getElementById("counter").innerHTML = "Faltan " + daysRound  + dy + hoursRound + hr + minutesRound + min + secondsRound + sec + " <br />";
-newtime = window.setTimeout("getTime();", 1000);
-}
-</script>
-<body onLoad="getTime()">
-</div>
-<!--<p class="lead" id="counter"></p>-->
-<!-- contador -->
-
-
 
 
       <!-- Columns are always 50% wide, on mobile and desktop -->
 <div class="row">
   <div class="col-xs-6" style="border-color:#000; border-style:thin;">
-   <a href="devfest.html"><img src="dist/img/logo_dev.png" style="width:345px; height:auto;"></a>
+   <img src="dist/img/logo_dev.png" style="width:545px; height:auto;">
 
    <br>
   </div>
 
   <div class="col-xs-6" style="border-color:#000; border-style:thin;">
-    <a href="gdayx.html"><img src="dist/img/bus_logo.png" style="width:auto; height:590px;"></a>
+
+    <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="jumbotron">Lugar</h1>
+    </div>
+    <p>Auditorio Lorem Ipsum Dolor.</p>
+    <div class="bs-example">
+      <!--<div class="jumbotron"></div>-->
+      <section id="lug-izquierda">
+        <iframe class="map" src="https://maps.google.com.pe/maps/ms?msa=0&amp;msid=207161644663938934037.0004dc7f4324cc08239b1&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=-12.073021,-76.951708&amp;spn=0.005246,0.012864&amp;output=embed"></iframe>
+      </section>
+      
+    </div>
+<div class="highlight" style="text-align:left;"><pre><code class="html">
+ <span>Av. Lorem ipsum dolor, sit amet 123. Lorem.</span><br>
+</code></pre></div>
+  </div>
+
+
+ <!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Menu</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+  <li><a href="devpresentacion.html">Presentación</a></li>
+    <li><a href="devagenda.html">Agenda</a></li>
+    <li><a href="devspeakers.html">Speakers</a></li>
+    <li><a href="devsponsor.html">Sponsor</a></li>
+    <li><a href="devlugar.html">Lugar</a></li>
+    <li class="divider"></li>
+    <li><a href="devreg.html">Regístrate</a></li>
+  </ul>
+</div>
+
+<!-- Indicates a successful or positive action -->
+<a class="btn btn-success" href="index.html">Regresar</a>
+<br>
+<!-- Marca -->
+<img src="dist/img/DevFest_marca.png" style="width:230px; height:auto; margin-left:340px;">
+
   </div>
 </div>   
 
 
 
 <!-- Columns are always 50% wide, on mobile and desktop -->
+<!--
 <div class="row">
-  <div class="col-xs-6" style="border-color:#000; border-style:thin; text-align:center;">
-    <!-- Button trigger modal -->
-  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg" style="font-size: 18px;">DevFest</a>
-
-<!-- Popover DevFest -->
-  <a  id="devfest" class="btn btn-lg btn-danger" data-placement="top" data-toggle="popover" title="DevFest" data-content="¡El DevFest está de regreso!" data-original-title="A Title">Google Developer Group</a>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">DevFest Lima 2013</h4>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
-   <br>
-  </div>
-
-  <div class="col-xs-6" style="border-color:#000; border-style:thin; text-align:center;">
-    
-
-     <!-- Button trigger modal -->
-  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg" style="font-size: 18px;">GDayX</a>
-
-    <!-- Popover GDayX -->
-  <a  id="gdayx" class="btn btn-lg btn-danger" data-placement="top" data-toggle="popover" title="GDayX" data-content="¡El GDayX está de regreso!" data-original-title="A Title">Google Business Group</a>
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">GDayX Lima 2013</h4>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-    <br>
-  </div>
-</div>   
+</div>
+-->   
 
 
 
