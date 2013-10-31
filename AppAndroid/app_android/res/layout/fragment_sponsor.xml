@@ -3,11 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/color_b1" >
+    android:background="@color/color_b1"
+    android:padding="5dp" >
     
-        <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+    <GridView
+        android:id="@+id/gridSponsor"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_gdg_devfest" />
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="2" >
+    </GridView>
+    
 </LinearLayout>
