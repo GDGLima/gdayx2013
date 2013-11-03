@@ -47,17 +47,20 @@ public class ScheduleAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View view, ViewGroup parent) 
 	{
-		// TODO Auto-generated method stub
+
 		ScheduleViewHolder holder;
 		if(view==null)
 		{
 			LayoutInflater l=(LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			view=l.inflate(R.layout.item_speaker, parent,false);
+			view=l.inflate(R.layout.item_schedule, parent,false);
+			
 			holder= new ScheduleViewHolder();
-			holder.txtSpeaker=(TextView)view.findViewById(R.id.txtSpeaker);
-			holder.txtDetailsSpeaker=(TextView)view.findViewById(R.id.txtDetailsSpeaker);
-			holder.img=(ImageView)view.findViewById(R.id.imgSpeaker);
-			holder.bgImg=(View)view.findViewById(R.id.viewSpeaker);
+			holder.txtHour1=(TextView)view.findViewById(R.id.txthour1);
+			holder.txtHour2=(TextView)view.findViewById(R.id.txthour2);
+			
+			holder.txt1=(TextView)view.findViewById(R.id.txt1);
+			holder.txt2=(TextView)view.findViewById(R.id.txt2);
+			holder.txt3=(TextView)view.findViewById(R.id.txt3);
 			//view.setLayoutParams(new GridView.LayoutParams(140,280));
 			
 		}else
@@ -68,14 +71,14 @@ public class ScheduleAdapter extends BaseAdapter {
 		ScheduleVo schedule =arrSchedule.get(position);
 		if(schedule!=null)
 		{
-			/*holder.txtSpeaker.setText(speaker.getName());
-			holder.txtDetailsSpeaker.setText(speaker.getDetails());
+			holder.txtHour1.setText(schedule.getHour1());
+			holder.txtHour2.setText(schedule.getHour2());
 			
-	        Bitmap bm=BitmapFactory.decodeResource(mContext.getResources(), speaker.getIdPhoto());
-	        Bitmap aux=ImageUtils.getCircularBitmap(bm);
-			holder.img.setImageBitmap(aux);
-			
-			view.setTag(holder); */
+			holder.txt1.setText(schedule.getTxt1());
+			holder.txt2.setText(schedule.getTxt2());
+			holder.txt3.setText(schedule.getTxt3());
+					
+			view.setTag(holder);
 		}
 		
 		return view;
@@ -83,20 +86,27 @@ public class ScheduleAdapter extends BaseAdapter {
 
 	static class ScheduleViewHolder
 	{
-		ImageView img;
-		View bgImg;
-		TextView txtSpeaker;
-		TextView txtDetailsSpeaker;
+		TextView txtHour1;
+		TextView txtHour2;
+		
+		TextView txt1;
+		TextView txt2;
+		TextView txt3;
 	}
 	//Data ----------------------
 	private ScheduleVo[] mSchedule={
-		new ScheduleVo(),
-		new ScheduleVo(),
-		new ScheduleVo(),
-		new ScheduleVo(),
-		new ScheduleVo(),
-		new ScheduleVo(),
-		new ScheduleVo()
+		new ScheduleVo("08:30","09:30","Android Design","",""),
+		new ScheduleVo("09:30","10:30","","Android Beginners",""),
+		new ScheduleVo("10:30","11:30","","",""),
+		new ScheduleVo("11:30","12:30","","",""),
+		new ScheduleVo("12:30","01:30","","Google Glass",""),
+		new ScheduleVo("12:30","01:30","","",""),
+		new ScheduleVo("12:30","01:30","","",""),
+		new ScheduleVo("12:30","01:30","","",""),
+		new ScheduleVo("12:30","01:30","","","Android Patterns"),
+		new ScheduleVo("12:30","01:30","","",""),
+		new ScheduleVo("12:30","01:30","Android Animations","","")
+
 	};
 
 
