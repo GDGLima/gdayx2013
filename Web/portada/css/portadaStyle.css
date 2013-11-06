@@ -1,0 +1,114 @@
+*{
+	margin: 0px;
+}
+
+body{
+	background: #292929;
+	color: #ffffff;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;;
+	
+}
+label{
+	font-size: 145%;
+
+}
+footer{
+	background: #242424;
+	bottom: 0px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+#backlogos{
+	position: absolute;
+	top: 0px;
+	width: 60%;
+}
+
+#devLogo, #busLogo{
+	/*background: #454545;*/
+	border-radius: 5%;
+	display: inline-block;
+	width: 30%;
+}
+#devLogo img{
+	width: 50%;
+}
+#busLogo img{
+	width: 86%;
+}
+#logosPortada, #conteoPortada{
+	padding-top: 3%;
+	text-align: center;
+	width: 100%;
+}
+#conteoPortada{
+	padding-top: 2%;
+}
+
+.bloque{
+	display: inline-block;
+	font-size: 300%;
+	font-style: italic;
+	height: 80px;
+	margin-top: 1%;
+	margin-left: 1%;
+	text-shadow: -3px 3px 2px #454545;
+	width: 80px;
+}
+.num{
+	margin: 15% 0% 0% -10%;
+}
+.seg{
+	font-size: 25%;
+	font-style: normal;
+	margin-top: 25%;
+}
+#dia{
+	background: #0083c4;
+}
+#hora{
+	background: #d94b41;
+}
+#minuto{
+	background: #f7c23b;	
+}
+#segundo{
+	background: #06964e;
+}
+.footerline{
+	height: 55px;
+}
+.footerline div{
+	margin-top: 25px;
+	display: inline-block;
+}
+.msnfooter{
+	font-size: 10px;
+}
+.linkfooter{
+	color: #d94b41;
+	font-size: 10px; 
+	text-decoration: none;
+}
+.redfooter{
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 5%;
+}
+@media screen and (max-width:1365px){
+	
+	#devLogo, #busLogo{
+		padding-top: 10%;
+	}
+	#conteoPortada{
+		padding-top: 5%;
+	}
+	.num{
+	margin: 6% 0% 0% 0%;
+	}
+	#backlogos{
+	top: 14%;
+	}
+
+}

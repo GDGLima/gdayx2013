@@ -3,5 +3,8 @@
     <color name="color_b1">#2B2B2B</color>
     <color name="color_w1">#ffffff</color>
     <color name="color_red1">#DB4437</color>
+    <color name="color_transparent">#00FFFFFF</color>
+    <color name="color_gray">#BDBDBD</color>
+    <color name="color_red">#db4437</color>
     
 </resources>

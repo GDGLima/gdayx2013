@@ -1,226 +1,237 @@
+
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
-	<title>GDAYX</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/navegador.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    -->
 
-	<header>
-		<div class="bar_top">
-			<div class="wrap_head">
-			<h1 class="logo"><span>GDays Lima</span> 2013<div class="int_right"><span></span></div></h1>
-			<h1 class="subtext"><span>30-1</span> Nov-Dic<div class="int_right"><span></span></div></h1>
-			</div>
+    <title>DevFest & GDayX</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="dist/css/starter-template.css" rel="stylesheet">
+    <link href="dist/css/docs.css" rel="stylesheet">
+  </head>
 
+  <body style="background: url(dist/img/bg.png) top center repeat-x, 
+  url(dist/img/bottom.png) bottom center repeat-x #2B2B2B;">
 
-		</div><div class="int_left"><span></span></div>
-
-		<div class="wrap_nav">
-			<nav class="primary_nav" id="nav">
-				<div class="left_nav"></div>
-				<ul>
-					<li><a href="#presentacion" id="pres">Presentaci&oacute;n</a></li>
-					<li><a href="#agenda" id="age">Agenda</a></li>
-					<li><a href="#speakers" id="spk">Speakers</a></li>
-					<li><a href="#sponsors" id="spo">Sponsor</a></li>
-					<li><a href="#lugar" id="lug">Lugar</a></li>
-					<li><a href="#registrate" id="reg">Registrate</a></li>
-				</ul>
-				<div class="right_nav"></div>
-			</nav>
-		</div>
-	</header>
-	<section class="contenedor">
-
-		<!--LOGOS-->
-		<section style="border: 0px solid red;" class="cont" id="log-izquierda">
-			<img style="width: 679px;" src="img/BUSINESS.png" />
-		</section>
-		<section style="border: 0px solid blue;" class="cont" id="log-derecha"> 
-			<img style="width: 398px;" src="img/DEV.png" />
-		</section>
-		<!--PRESENTACION-->
-		<section class="cont" id="pres-izquierda">
-			<img src="img/logo_gbg_gday.png" />
-		</section>
-		<section class="cont" id="pres-derecha"> 
-			<div class="fecha">
-					<div class="dias">16-18</div>
-					<div class="mes">Noviembre</div>
-			</div>
-			<div class="title">GBG GDAY<span>2013</span>
-				<div class="line"></div>
-			</div>
-			<div class="description">
-				<p>
-					El segmento Google for Business, está orientado a empresas, instituciones y agencias que mediante experiencias podrán compartir las mejores prácticas para realizar negocios utilizando productos de Google.
-				</p>
-			</div>
-		</section>
-		<!--AGENDA-->
-		<section class="cont" id="age-izquierda"></section>
-		<section class="cont" id="age-derecha"></section>
-
-		<section id="age-mid">
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="general"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>			
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="general"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>			
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="general"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>			
-			<div class="hora"><aside class="hour">10:00 - 10:00</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<div class="aula"><aside class="titulo">Titulo</aside><aside class="descripcion">descripcion</aside></div>
-			<br><br><br>
+  <!-- nav -->
+  <!--
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    -->
+    <!-- end nav -->
 
 
-		</section>
-		<!--SPEAKER-->
-		<section class="cont" id="spk-izquierda">
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-		</div></section>
-		<section class="cont" id="spk-derecha">
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="speaker">
-				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-		</section>
-		<!--SPONSORS-->
-		<section class="cont" id="spo-izquierda">
-			<article class="sponsors">
-				<a href="https://plus.google.com/u/0/116054509796958923549/posts" target="_blank"><img src="img/gbgoficial140.png" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="sponsors">
-				<a href="http://www.gdglima.pe/" target="_blank"><img src="img/gdglima140.png" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-		</section>
-		<section class="cont" id="spo-derecha">
-			<article class="sponsors">
-				<a href="https://plus.google.com/u/0/116054509796958923549/posts" target="_blank"><img src="img/gbgoficial140.png" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-			<article class="sponsors">
-				<a href="http://www.gdglima.pe/" target="_blank"><img src="img/gdglima140.png" /></a>
-				<label>Nombre del Speaker</label>
-				<aside>Compañia del Speaker</aside>
-			</article>
-		</section>
-		<!--LUGAR-->
-		<section class="cont" id="lug-izquierda">
-			<iframe  class="map" src="https://maps.google.com.pe/maps/ms?msa=0&amp;msid=207161644663938934037.0004dc7f4324cc08239b1&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=-12.073021,-76.951708&amp;spn=0.005246,0.012864&amp;output=embed"></iframe>
-		</section>
-		<section class="cont" id="lug-derecha" >
-			<div class="title">Lugar del Evento<span>GDayX</span><div class="line"></div></div>
-			<div class="description">
-				<p>Auditorio Campus I - Universidad San Ignacio de Loyola USIL, desde las 9:00 a.m.</p>
-			</div>
-		</section>
-		<!--REGISTRATE-->
-		<section class="cont" id="reg-izquierda" >
-			<div style="width:100%; text-align:left; position:relative; top:10%;">
-				<iframe src="http://www.eventbrite.com/tickets-external?eid=6606063915&amp;ref=etckt&amp;v=2" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
-				</iframe>
-				<div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;"><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Registro de eventos</a><span style="color:#ddd;"> para </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://gdayperu.eventbrite.com?ref=etckt">GDayPeru</a> <span style="color:#ddd;">ofrecido por</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a>
-				</div>
-			</div>
-		</section>
-		<section class="cont" id="reg-derecha" >
-			<div class="title">Reg&iacute;strate en<span>GDayX</span><div class="line"></div></div>
-			<div class="description">
-				<p>Participa gratis registrándote aquí.</p>
-			</div>
-		</section>
-	</section>
-	<footer>
-		<!--<div class="bt_Registrate">Reg&iacute;strate</div>-->
-	</footer>
-</body>
+<div class="container">
+
+      <div class="starter-template">
+        <h1 style="font-size:63px;">DevFest & GDayX Lima 2013</h1>
+        <p class="lead">Los dos mejores eventos en un sólo Festival.</p>
+        <p class="lead" id="counter" style="color:#fff;margin-top:100px;"></p>
+      </div>
+
+<!-- contador -->
+<div align="center">
+<script languaje="JavaScript">
+function getTime() {
+now = new Date();
+y2k = new Date("Nov 30 2013 23:59:59");
+days = (y2k - now) / 1000 / 60 / 60 / 24;
+daysRound = Math.floor(days);
+hours = (y2k - now) / 1000 / 60 / 60 - (24 * daysRound);
+hoursRound = Math.floor(hours);
+minutes = (y2k - now) / 1000 /60 - (24 * 60 * daysRound) - (60 * hoursRound);
+minutesRound = Math.floor(minutes);
+seconds = (y2k - now) / 1000 - (24 * 60 * 60 * daysRound) - (60 * 60 * hoursRound) - (60 * minutesRound);
+secondsRound = Math.round(seconds);
+sec = (secondsRound == 1) ? " segundo" : " segundos";
+min = (minutesRound == 1) ? " minuto" : " minutos, ";
+hr = (hoursRound == 1) ? " hora" : " horas, ";
+dy = (daysRound == 1)  ? " día" : " d&iacute;as, "
+document.getElementById("counter").innerHTML = "Faltan " + daysRound  + dy + hoursRound + hr + minutesRound + min + secondsRound + sec + " <br />";
+newtime = window.setTimeout("getTime();", 1000);
+}
+</script>
+<body onLoad="getTime()">
+</div>
+<!--<p class="lead" id="counter"></p>-->
+<!-- contador -->
+
+
+
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="row">
+  <div class="col-xs-6" style="border-color:#000; border-style:thin;">
+   <a href="devfest.html"><img src="dist/img/developer_bajo.png" style="width:345px; height:auto;"></a>
+
+   <br>
+  </div>
+
+  <div class="col-xs-6" style="border-color:#000; border-style:thin;">
+    <a href="gdayx.html"><img src="dist/img/business_bajo.png" style="width:auto; height:590px;"></a>
+  </div>
+</div>   
+
+
+
+<!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="row">
+  <div class="col-xs-6" style="border-color:#000; border-style:thin; text-align:center;">
+    <!-- Button trigger modal -->
+  <a href="devfest.html" class="btn btn-primary btn-lg" style="font-size: 18px;">DevFest</a>
+  <!--<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg" style="font-size: 18px;">DevFest</a>-->
+
+<!-- Popover DevFest -->
+  <!--
+  <a  id="devfest" class="btn btn-lg btn-danger" data-placement="top" data-toggle="popover" title="DevFest" data-content="¡El DevFest está de regreso!" data-original-title="A Title">Google Developer Group</a>
+  -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">DevFest Lima 2013</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+   <br>
+  </div>
+
+  <div class="col-xs-6" style="border-color:#000; border-style:thin; text-align:center;">
+    
+
+     <!-- Button trigger modal -->
+  <a  href="gdayx.html" class="btn btn-primary btn-lg" style="font-size: 18px;">GDayX</a>
+  <!--<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg" style="font-size: 18px;">GDayX</a>-->
+
+    <!-- Popover GDayX -->
+  <!--
+  <a  id="gdayx" class="btn btn-lg btn-danger" data-placement="top" data-toggle="popover" title="GDayX" data-content="¡El GDayX está de regreso!" data-original-title="A Title">Google Business Group</a>
+  -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">GDayX Lima 2013</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+    <br>
+  </div>
+</div>   
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function (){
+         $("#devfest").popover();
+      });
+      $(function (){
+         $("#gdayx").popover();
+      });
+      </script>
+      </script>
+
+  </body>
+
+  <footer class="bs-footer" role="contentinfo">
+      <div class="container">
+        <div class="bs-social">
+  <ul class="bs-social-buttons">
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+    </li>
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+    </li>
+    <li class="follow-btn">
+      <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1381275758.html#_=1382030112510&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=twbootstrap&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 236px; height: 20px;"></iframe>
+    </li>
+    <li class="tweet-btn">
+      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1381275758.html#_=1382030112505&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fgetbootstrap.com%2Fcomponents%2F&amp;related=mdo%3ACreator%20of%20Twitter%20Bootstrap&amp;size=m&amp;text=Components%20%C2%B7%20Bootstrap&amp;url=http%3A%2F%2Fgetbootstrap.com%2F&amp;via=twbootstrap" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe>
+    </li>
+  </ul>
+</div>
+
+
+        <p>Diseñado por el equipo de desarrollo Google Developer Group Lima - Perú<a href="http://twitter.com/gdglima" target="_blank"> @gdglima</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="../2.3.2/">Bootstrap 2.3.2 docs</a></li>
+          <li class="muted">·</li>
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
 </html>
