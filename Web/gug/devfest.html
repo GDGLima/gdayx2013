@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
+	<title>DevFest Lima 2013 </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/navegador.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/png" href="img/gday.png">
+</head>
+<body>
+	<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<header>
+		<div style=" width:20%; display: inline-block; margin: 20px 0px 20px 0px;"></div>
+		
+		<nav>
+			<a id="home" href="index.html">+Home</a>
+			<a id="info" href="#info-content">+Info</a>
+			<a id="glass" href="#glass-content">+Glass</a>
+			<a id="speakers" href="#speakers-content">+Speakers</a>
+			<a id="agenda" href="#agenda-content">+Agenda</a>
+			<a id="sponsors" href="#sponsors-content">+Sponsors</a>	
+			<a id="registrate" href="#registrate-content">+Registrate</a>
+		</nav>		
+		
+	</header>
+<div class="detalle">
+			<div id="rojo" class="barra"></div>
+			<div id="azul" class="barra"></div>
+			<div id="verde" class="barra"></div>
+			<div id="amarillo" class="barra"></div>
+		</div>
+
+	<section class="contenedor">
+		<!--+INFO-->
+		<section id="info-content"  data-section-offset="65">
+			<article class="sector">
+				<img src="img/logo.png">
+				
+			</article>
+			<article class="sector">
+				
+				<div class="tituloGlobo">+DevFest Lima 2013</div>
+				<p>El Festival para desarrolladores más grande del mundo DevFest Lima 2013 regresa con nuevas sesiones, codelabs y un segmento especial de Google Glass para desarrolladores en vivo.</p>
+				<p>En el segmento Google for Developers, se desarrollará la edición DevFest Lima 2013 donde también participarán reconocidos expositores del  canal de Ingeniería de Google y expertos desarrolladores de la región Latinoamerica que brindarán sesiones, codelabs orientados a desarrolladores de software.</p> <br><br><br><br><br>
+			</article>	
+		</section>
+
+		<!--+GLASS-->
+		<section id="glass-content"  data-section-offset="65">
+			<article class="sector">
+
+
+			</article>
+			<article class="sector">
+				<br><br><br>
+				<img src="img/glass2.jpg" id="glass2">
+				<div style="width: 45%; display: inline-block; margin-left:10px; margin-right:10px;">
+				<img src="img/glass1.jpg" id="glass1">
+				<img src="img/glass6.png" id="glass6">
+				</div>
+				<img src="img/glass7.jpg" id="glass7">
+				
+
+			</article>
+		</section>
+		
+		<!--+SPEAKERS-->
+		<section id="speakers-content"  data-section-offset="65">
+			<article class="sector">
+
+
+			</article>
+			<article class="sector">
+
+
+			</article>
+		</section>
+
+		<!--+Agenda-->
+		<section id="agenda-content"  data-section-offset="65">
+			<article class="sector">
+
+
+			</article>
+			<article class="sector">
+
+
+			</article>
+		</section>
+
+		<!--+SPONSORS-->
+		<section id="sponsors-content"  data-section-offset="65">
+			<article class="sector">
+
+
+			</article>
+			<article class="sector">
+
+
+			</article>
+		</section>
+
+		<!--+REGISTRATE-->
+		<section id="registrate-content"  data-section-offset="65">
+			<article class="sector">
+
+
+			</article>
+			<article class="sector">
+
+
+			</article>
+		</section>
+	
+
+			
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer>
+		<div class="footerline"><div class="redfooter">@2013 GDG Lima & GBG Lima</div><div class="redfooter">#gdlima   #devfestlima</div></div>
+	</footer>
+
+
+<script type="text/javascript">
+ $(document).ready(function(e) {
+
+var key='info-content';
+
+
+	$('nav a').bind('click', function(e) {
+			
+
+			if($(this.hash).attr('data-section-offset')=='65'){
+				e.preventDefault();
+					if(key!=$(this.hash).attr('id')){	
+							 
+						$('html,body').animate({scrollTop: $(this.hash).offset().top-$(this.hash).attr('data-section-offset')});
+						key=$(this.hash).attr('id');
+					}else{
+						 e.preventDefault();
+						 
+					}  
+			}
+	});
+  });
+</script>
+
+</body>
+</html>
