@@ -90,10 +90,10 @@ public class SponsorAdapter extends BaseAdapter {
 	}
 	//Data ----------------------
 	private SponsorVo[] mSponsors={
-		new SponsorVo(R.drawable.sponsor_gdglima, "GDG Lima", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.sponsor_gbg, "GBG Lima", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.sponsor_gdglima, "GDG Lima", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.sponsor_gbg, "GBG Lima", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.gdg, "Google Developers", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.gbg, "GBG", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.usmp, "San Martin", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.google_logo, "Google", "Organizer GDG Lima"),
 		new SponsorVo(R.drawable.sponsor_gbg, "GBG Lima", "Organizer GDG Lima"),
 		new SponsorVo(R.drawable.sponsor_gdglima, "GDG Lima", "Organizer GDG Lima"),
 		new SponsorVo(R.drawable.sponsor_gdglima, "GDG Lima", "Organizer GDG Lima")
