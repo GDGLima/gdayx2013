@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bussiness -->
+    <string-array name="arr_horas_business">
+        <item >8:00 am – 9:30 am</item>
+        <item >9:30 am</item>
+        <item >12:30 pm</item>
+        <item >2:00 pm – 6:00 pm</item>
+        <item >6:00 pm</item>
+    </string-array>
+    
+    <string-array name="arr_agenda_business">
+        <item >Registro de asistentes.</item>
+        <item >Conferencias y seminarios.</item>
+        <item >Almuerzo.</item>
+        <item >Conferencias y seminarios.</item>
+        <item >Cierre día 1.</item>
+     </string-array>
+    
+    <!-- Developers -->
+    <string-array name="arr_horas_devs">
+        <item >8:00 am – 9:30 am</item>
+        <item >9:30 am</item>
+        <item >12:30 pm</item>
+        <item >2:00 pm – 4:30 pm</item>
+        <item >4:30 pm</item>
+    </string-array>
+    
+    <string-array name="arr_agenda_devs">
+        <item >Registro de asistentes.</item>
+        <item >Conferencias y seminarios.</item>
+        <item >Almuerzo.</item>
+        <item >Conferencias y seminarios.</item>
+        <item >Sorteos, sorpresas, cierre, After Party.</item>
+     </string-array>
+</resources>
