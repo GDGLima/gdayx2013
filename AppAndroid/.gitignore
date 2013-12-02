@@ -1,0 +1,6 @@
+# extensiones #
+*.properties
+
+# folders #
+app_android/bin/
+app_android/gen/

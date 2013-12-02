@@ -8,7 +8,6 @@ package com.google.android.gms;
 
 public final class R {
 	public static final class attr {
-<<<<<<< HEAD
 		public static final int cameraBearing = 0x7f010063;
 		public static final int cameraTargetLat = 0x7f010064;
 		public static final int cameraTargetLng = 0x7f010065;
@@ -63,10 +62,10 @@ public final class R {
 		public static final int common_signin_btn_text_normal_light = 0x7f020085;
 		public static final int common_signin_btn_text_pressed_dark = 0x7f020086;
 		public static final int common_signin_btn_text_pressed_light = 0x7f020087;
-		public static final int ic_plusone_medium_off_client = 0x7f02008a;
-		public static final int ic_plusone_small_off_client = 0x7f02008b;
-		public static final int ic_plusone_standard_off_client = 0x7f02008c;
-		public static final int ic_plusone_tall_off_client = 0x7f02008d;
+		public static final int ic_plusone_medium_off_client = 0x7f02008f;
+		public static final int ic_plusone_small_off_client = 0x7f020090;
+		public static final int ic_plusone_standard_off_client = 0x7f020091;
+		public static final int ic_plusone_tall_off_client = 0x7f020092;
 	}
 	public static final class id {
 		public static final int hybrid = 0x7f050013;
@@ -104,44 +103,6 @@ public final class R {
 	}
 	public static final class styleable {
 		public static final int[] MapAttrs = { 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e, 0x7f01006f };
-=======
-		public static final int cameraBearing = 0x7f010001;
-		public static final int cameraTargetLat = 0x7f010002;
-		public static final int cameraTargetLng = 0x7f010003;
-		public static final int cameraTilt = 0x7f010004;
-		public static final int cameraZoom = 0x7f010005;
-		public static final int mapType = 0x7f010000;
-		public static final int uiCompass = 0x7f010006;
-		public static final int uiRotateGestures = 0x7f010007;
-		public static final int uiScrollGestures = 0x7f010008;
-		public static final int uiTiltGestures = 0x7f010009;
-		public static final int uiZoomControls = 0x7f01000a;
-		public static final int uiZoomGestures = 0x7f01000b;
-		public static final int useViewLifecycle = 0x7f01000c;
-		public static final int zOrderOnTop = 0x7f01000d;
-	}
-	public static final class id {
-		public static final int none = 0x7f050000;
-		public static final int normal = 0x7f050001;
-		public static final int satellite = 0x7f050002;
-		public static final int terrain = 0x7f050003;
-	}
-	public static final class string {
-		public static final int common_google_play_services_enable_button = 0x7f060006;
-		public static final int common_google_play_services_enable_text = 0x7f060005;
-		public static final int common_google_play_services_enable_title = 0x7f060004;
-		public static final int common_google_play_services_install_button = 0x7f060003;
-		public static final int common_google_play_services_install_text_phone = 0x7f060001;
-		public static final int common_google_play_services_install_text_tablet = 0x7f060002;
-		public static final int common_google_play_services_install_title = 0x7f060000;
-		public static final int common_google_play_services_unknown_issue = 0x7f060009;
-		public static final int common_google_play_services_update_button = 0x7f06000a;
-		public static final int common_google_play_services_update_text = 0x7f060008;
-		public static final int common_google_play_services_update_title = 0x7f060007;
-	}
-	public static final class styleable {
-		public static final int[] MapAttrs = { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d };
->>>>>>> c822d7d6eaa150655533df62117fc12c64ffbee8
 		public static final int MapAttrs_cameraBearing = 1;
 		public static final int MapAttrs_cameraTargetLat = 2;
 		public static final int MapAttrs_cameraTargetLng = 3;
