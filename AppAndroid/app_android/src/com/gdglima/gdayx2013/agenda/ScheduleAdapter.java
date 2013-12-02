@@ -94,18 +94,22 @@ public class ScheduleAdapter extends BaseAdapter {
 		TextView txt3;
 	}
 	//Data ----------------------
-	private ScheduleVo[] mSchedule={
-		new ScheduleVo("08:30","09:30","Android Design","",""),
-		new ScheduleVo("09:30","10:30","","Android Beginners",""),
-		new ScheduleVo("10:30","11:30","","",""),
-		new ScheduleVo("11:30","12:30","","",""),
-		new ScheduleVo("12:30","01:30","","Google Glass",""),
-		new ScheduleVo("12:30","01:30","","",""),
-		new ScheduleVo("12:30","01:30","","",""),
-		new ScheduleVo("12:30","01:30","","",""),
-		new ScheduleVo("12:30","01:30","","","Android Patterns"),
-		new ScheduleVo("12:30","01:30","","",""),
-		new ScheduleVo("12:30","01:30","Android Animations","","")
+	private ScheduleVo[] mSchedule=
+		{
+			new ScheduleVo("","","Dia 1: Google for Business","",""),
+			new ScheduleVo("8:00 am","9:30 am","Registro de asistentes.","",""),
+			new ScheduleVo("9:30 am","","Conferencias y seminarios.","",""),
+			new ScheduleVo("12:30 pm","","Almuerzo.","",""),
+			new ScheduleVo("2:00 pm","6:00 pm","Conferencias y seminarios.","",""),
+			new ScheduleVo("6:00 pm","","Cierre d’a 1.","",""),
+			new ScheduleVo("","","-----------","---------","---------"),
+			new ScheduleVo("","","Dia 2: DevFest Lima","",""),
+			new ScheduleVo("","","-----------","---------","---------"),
+			new ScheduleVo("8:00 am","9:30 am","Registro de asistentes.","",""),
+			new ScheduleVo("9:30 am","","Conferencias y seminarios.","",""),
+			new ScheduleVo("12:30 pm","","Almuerzo.","",""),
+			new ScheduleVo("2:00 pm","4:30 pm","Conferencias y seminarios.","",""),
+			new ScheduleVo("4:30 pm","","Sorteos, sorpresas, cierre, After Party.","","")
 
 	};
 

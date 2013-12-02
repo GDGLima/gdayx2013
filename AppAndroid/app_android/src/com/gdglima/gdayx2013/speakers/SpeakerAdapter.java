@@ -90,10 +90,10 @@ public class SpeakerAdapter extends BaseAdapter {
 	}
 	//Data ----------------------
 	private SpeakerVo[] mSpeakers={
-		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
-		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
-		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
-		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
+		new SpeakerVo(R.drawable.david, "+David Chandler", "Android Developer Advocate - Google"),
+		new SpeakerVo(R.drawable.maximiliano, "+Maximiliano Firtman", "Glass Explorer + Web + Mobile developer"),
+		new SpeakerVo(R.drawable.freddy, "+Freddy Vega", "CEO Mejorando.la - Glass Explorer"),
+		new SpeakerVo(R.drawable.matias, "+Matias Molinas", "Google Developer Expert - Youtube"),
 		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
 		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
 		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima")
