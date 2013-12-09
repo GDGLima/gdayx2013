@@ -26,10 +26,14 @@ public class SponsorAdapter extends BaseAdapter {
         mContext = c;
         arrSponsors=Arrays.asList(mSponsors);
     }
+    public SponsorAdapter(Context c,SponsorVo[] data) {
+        mContext = c;
+        arrSponsors=Arrays.asList(data);
+    }
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return mSponsors.length;
+		return arrSponsors.size();
 	}
 
 	@Override
@@ -90,13 +94,13 @@ public class SponsorAdapter extends BaseAdapter {
 	}
 	//Data ----------------------
 	private SponsorVo[] mSponsors={
-		new SponsorVo(R.drawable.gdg, "Google Developers", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.gbg, "GBG", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.usmp, "San Martin", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.googledev_logo, "Google Developers", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.gbglogo, "GBG", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.usmp_logo, "San Martin", "Organizer GDG Lima"),
 		new SponsorVo(R.drawable.google_logo, "Google", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.sponsor_gbg, "GBG Lima", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.sponsor_gdglima, "GDG Lima", "Organizer GDG Lima"),
-		new SponsorVo(R.drawable.sponsor_gdglima, "GDG Lima", "Organizer GDG Lima")
+		new SponsorVo(R.drawable.gbglima_logo, "GBG Lima", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.pucp_logo, "GDG Lima", "Organizer GDG Lima"),
+		new SponsorVo(R.drawable.upacifico_logo, "GDG Lima", "Organizer GDG Lima")
 	};
 
 

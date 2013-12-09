@@ -65,6 +65,10 @@ public class GDayx2013Activity extends SherlockFragmentActivity  {
 		getSupportMenuInflater().inflate(R.menu.gdayx2013, menu);
 		return true;
 	}
+	
+	/**
+	 * Gplus http://ankitthakkar90.blogspot.com/2013/05/google-plus-integration-in-android.html
+	 */
 
 
 

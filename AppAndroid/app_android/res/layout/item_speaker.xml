@@ -32,9 +32,11 @@
             android:id="@+id/txtSpeaker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:text="Nombre del Speaker"
-            android:gravity="center_horizontal"
+            android:gravity="center_horizontal|bottom"
             android:textSize="12sp"
+            android:lines="2"
             android:textStyle="bold"
             android:textColor="@color/color_w1" />
 
@@ -42,7 +44,7 @@
             android:id="@+id/txtDetailsSpeaker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
+            android:gravity="center_horizontal|bottom"
             android:text="Compañia del Speaker"
             android:lines="3"
             android:textSize="11sp"

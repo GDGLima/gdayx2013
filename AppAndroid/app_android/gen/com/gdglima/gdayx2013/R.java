@@ -13,14 +13,23 @@ public final class R {
         public static final int scale_in=0x7f040001;
     }
     public static final class array {
-        public static final int arr_agenda_business=0x7f0c0001;
-        public static final int arr_agenda_devs=0x7f0c0003;
         /**  Bussiness 
          */
-        public static final int arr_horas_business=0x7f0c0000;
+        public static final int arr_agenda_business=0x7f0c0000;
         /**  Developers 
+ 
+             <item >Organizadores | Google | USMP | GBG | Google Developers</item>
+           <item >Platinum | Universidad del Pacífico</item>
+           <item >Comunitarios | SEDIPRO UNFV</item> 
+    
          */
-        public static final int arr_horas_devs=0x7f0c0002;
+        public static final int arr_agenda_devs=0x7f0c0003;
+        /**   Expositores 
+         */
+        public static final int arr_speakers=0x7f0c0001;
+        /**   Sponsors 
+         */
+        public static final int arr_sponsors=0x7f0c0002;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -818,11 +827,12 @@ containing a value of this type.
         public static final int abs__bright_foreground_disabled_holo_light=0x7f070005;
         public static final int abs__bright_foreground_holo_dark=0x7f070002;
         public static final int abs__bright_foreground_holo_light=0x7f070003;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f070016;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f070017;
-        public static final int abs__primary_text_holo_dark=0x7f070018;
-        public static final int abs__primary_text_holo_light=0x7f070019;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f070017;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f070018;
+        public static final int abs__primary_text_holo_dark=0x7f070019;
+        public static final int abs__primary_text_holo_light=0x7f07001a;
         public static final int color_b1=0x7f070010;
+        public static final int color_blue=0x7f070016;
         public static final int color_gray=0x7f070014;
         public static final int color_red=0x7f070015;
         public static final int color_red1=0x7f070012;
@@ -840,8 +850,8 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f07000c;
         public static final int common_signin_btn_light_text_focused=0x7f07000d;
         public static final int common_signin_btn_light_text_pressed=0x7f07000b;
-        public static final int common_signin_btn_text_dark=0x7f07001a;
-        public static final int common_signin_btn_text_light=0x7f07001b;
+        public static final int common_signin_btn_text_dark=0x7f07001b;
+        public static final int common_signin_btn_text_light=0x7f07001c;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1087,32 +1097,48 @@ containing a value of this type.
         public static final int common_signin_btn_text_pressed_dark=0x7f020086;
         public static final int common_signin_btn_text_pressed_light=0x7f020087;
         public static final int david=0x7f020088;
-        public static final int empty_photo=0x7f020089;
-        public static final int freddy=0x7f02008a;
-        public static final int gbg=0x7f02008b;
-        public static final int gdg=0x7f02008c;
-        public static final int google_logo=0x7f02008d;
-        public static final int ic_launcher=0x7f02008e;
-        public static final int ic_plusone_medium_off_client=0x7f02008f;
-        public static final int ic_plusone_small_off_client=0x7f020090;
-        public static final int ic_plusone_standard_off_client=0x7f020091;
-        public static final int ic_plusone_tall_off_client=0x7f020092;
-        public static final int logo_gbg_gday=0x7f020093;
-        public static final int logo_gbg_gday2=0x7f020094;
-        public static final int logo_gdg_devfest=0x7f020095;
-        public static final int matias=0x7f020096;
-        public static final int maximiliano=0x7f020097;
-        public static final int pic_eduardo=0x7f020098;
-        public static final int selector_item_speaker=0x7f020099;
-        public static final int selector_item_sponsor=0x7f02009a;
-        public static final int shape_circle=0x7f02009b;
-        public static final int shape_circle_border=0x7f02009c;
-        public static final int shape_circle_border_noselected=0x7f02009d;
-        public static final int shape_rectangle=0x7f02009e;
-        public static final int shape_rectangle_noselected=0x7f02009f;
-        public static final int sponsor_gbg=0x7f0200a0;
-        public static final int sponsor_gdglima=0x7f0200a1;
-        public static final int usmp=0x7f0200a2;
+        public static final int deborah=0x7f020089;
+        public static final int empty_photo=0x7f02008a;
+        public static final int freddy=0x7f02008b;
+        public static final int gbg=0x7f02008c;
+        public static final int gbglima_logo=0x7f02008d;
+        public static final int gbglogo=0x7f02008e;
+        public static final int gdg=0x7f02008f;
+        public static final int gdglima=0x7f020090;
+        public static final int gdglogo=0x7f020091;
+        public static final int google_logo=0x7f020092;
+        public static final int googledev_logo=0x7f020093;
+        public static final int ic_launcher=0x7f020094;
+        public static final int ic_plusone_medium_off_client=0x7f020095;
+        public static final int ic_plusone_small_off_client=0x7f020096;
+        public static final int ic_plusone_standard_off_client=0x7f020097;
+        public static final int ic_plusone_tall_off_client=0x7f020098;
+        public static final int logo_gbg_gday=0x7f020099;
+        public static final int logo_gbg_gday2=0x7f02009a;
+        public static final int logo_gdg_devfest=0x7f02009b;
+        public static final int logo_gdglima=0x7f02009c;
+        public static final int logo_gdglima3=0x7f02009d;
+        public static final int logo_gdglima4=0x7f02009e;
+        public static final int logo_gdglima5=0x7f02009f;
+        public static final int marco=0x7f0200a0;
+        public static final int matias=0x7f0200a1;
+        public static final int maximiliano=0x7f0200a2;
+        public static final int nick=0x7f0200a3;
+        public static final int pic_eduardo=0x7f0200a4;
+        public static final int pucp_logo=0x7f0200a5;
+        public static final int selector_item_speaker=0x7f0200a6;
+        public static final int selector_item_sponsor=0x7f0200a7;
+        public static final int shape_circle=0x7f0200a8;
+        public static final int shape_circle_border=0x7f0200a9;
+        public static final int shape_circle_border_noselected=0x7f0200aa;
+        public static final int shape_rectangle=0x7f0200ab;
+        public static final int shape_rectangle_noselected=0x7f0200ac;
+        public static final int sponsor_gbg=0x7f0200ad;
+        public static final int sponsor_gdglima=0x7f0200ae;
+        public static final int talia=0x7f0200af;
+        public static final int upacifico_logo=0x7f0200b0;
+        public static final int usmp=0x7f0200b1;
+        public static final int usmp_logo=0x7f0200b2;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f050024;
@@ -1154,18 +1180,19 @@ containing a value of this type.
         public static final int abs__textButton=0x7f050017;
         public static final int abs__title=0x7f05001f;
         public static final int abs__up=0x7f05000b;
-        public static final int action_settings=0x7f050044;
+        public static final int action_settings=0x7f050045;
         public static final int container=0x7f050036;
         public static final int disableHome=0x7f050009;
         public static final int edit_query=0x7f05002a;
-        public static final int gridSpeaker=0x7f050039;
-        public static final int gridSponsor=0x7f05003a;
+        public static final int gridSpeaker=0x7f05003a;
+        public static final int gridSponsor=0x7f05003b;
         public static final int homeAsUp=0x7f050006;
         public static final int hybrid=0x7f050013;
-        public static final int imgSpeaker=0x7f050040;
+        public static final int imageView1=0x7f050037;
+        public static final int imgSpeaker=0x7f050041;
         public static final int listMode=0x7f050002;
-        public static final int lstSchedule=0x7f050037;
-        public static final int map=0x7f050038;
+        public static final int lstSchedule=0x7f050038;
+        public static final int map=0x7f050039;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050001;
         public static final int satellite=0x7f050011;
@@ -1174,15 +1201,15 @@ containing a value of this type.
         public static final int showTitle=0x7f050007;
         public static final int tabMode=0x7f050003;
         public static final int terrain=0x7f050012;
-        public static final int txt1=0x7f05003d;
-        public static final int txt2=0x7f05003e;
-        public static final int txt3=0x7f05003f;
-        public static final int txtDetailsSpeaker=0x7f050043;
-        public static final int txtSpeaker=0x7f050042;
-        public static final int txthour1=0x7f05003b;
-        public static final int txthour2=0x7f05003c;
+        public static final int txt1=0x7f05003e;
+        public static final int txt2=0x7f05003f;
+        public static final int txt3=0x7f050040;
+        public static final int txtDetailsSpeaker=0x7f050044;
+        public static final int txtSpeaker=0x7f050043;
+        public static final int txthour1=0x7f05003c;
+        public static final int txthour2=0x7f05003d;
         public static final int useLogo=0x7f050004;
-        public static final int viewSpeaker=0x7f050041;
+        public static final int viewSpeaker=0x7f050042;
         public static final int wrap_content=0x7f050000;
     }
     public static final class integer {
@@ -1211,18 +1238,20 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int activity_gdayx2013=0x7f030015;
-        public static final int fragment_agenda=0x7f030016;
-        public static final int fragment_place=0x7f030017;
-        public static final int fragment_speakers=0x7f030018;
-        public static final int fragment_sponsor=0x7f030019;
-        public static final int item_schedule=0x7f03001a;
-        public static final int item_speaker=0x7f03001b;
-        public static final int item_sponsor=0x7f03001c;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
-        public static final int sherlock_spinner_item=0x7f03001e;
+        public static final int activity_splash=0x7f030016;
+        public static final int fragment_agenda=0x7f030017;
+        public static final int fragment_place=0x7f030018;
+        public static final int fragment_speakers=0x7f030019;
+        public static final int fragment_sponsor=0x7f03001a;
+        public static final int item_schedule=0x7f03001b;
+        public static final int item_speaker=0x7f03001c;
+        public static final int item_sponsor=0x7f03001d;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001e;
+        public static final int sherlock_spinner_item=0x7f03001f;
     }
     public static final class menu {
         public static final int gdayx2013=0x7f0d0000;
+        public static final int splash=0x7f0d0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1357,6 +1386,8 @@ containing a value of this type.
          */
         public static final int common_signin_button_text_long=0x7f0a001f;
         public static final int hello_world=0x7f0a0028;
+        public static final int title_activity_splash=0x7f0a0029;
+        public static final int txt_empty=0x7f0a002a;
     }
     public static final class style {
         /** 
@@ -1382,7 +1413,6 @@ containing a value of this type.
          */
         public static final int AppBaseTheme=0x7f0b0059;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b005a;
         public static final int Sherlock___TextAppearance_Small=0x7f0b0046;

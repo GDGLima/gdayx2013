@@ -1,6 +1,7 @@
 package com.gdglima.gdayx2013.speakers;
 
 import com.gdglima.gdayx2013.R;
+import com.gdglima.gdayx2013.utils.DevFestLimaSession;
 import com.gdglima.gdayx2013.utils.ImageUtils;
 
 import android.graphics.Bitmap;
@@ -29,7 +30,9 @@ public class SpeakerFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_speakers, container, false);
         
         grid=(GridView)rootView.findViewById(R.id.gridSpeaker);
-        SpeakerAdapter adapter=new  SpeakerAdapter(getActivity().getApplicationContext());
+       // SpeakerAdapter adapter=new  SpeakerAdapter(getActivity().getApplicationContext());
+        SpeakerAdapter adapter=new  SpeakerAdapter(getActivity().getApplicationContext(),
+        		DevFestLimaSession.getInstance().getArrSpeakers());
         grid.setAdapter(adapter);
         /*img=(ImageView)rootView.findViewById(R.id.img);
         

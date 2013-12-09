@@ -1,36 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Bussiness -->
-    <string-array name="arr_horas_business">
-        <item >8:00 am – 9:30 am</item>
-        <item >9:30 am</item>
-        <item >12:30 pm</item>
-        <item >2:00 pm – 6:00 pm</item>
-        <item >6:00 pm</item>
-    </string-array>
     
     <string-array name="arr_agenda_business">
-        <item >Registro de asistentes.</item>
-        <item >Conferencias y seminarios.</item>
-        <item >Almuerzo.</item>
-        <item >Conferencias y seminarios.</item>
-        <item >Cierre día 1.</item>
+        <item >---|Sab 14Dic |Google for Business #gdlima </item>
+        <item >8:00 am – 9:30 am | | Registro de asistentes.</item>
+        <item >9:30 am | | Conferencias y seminarios.</item>
+        <item >12:30 pm | | Almuerzo.</item>
+        <item >2:00 pm – 6:00 pm | | Conferencias y seminarios.</item>
+        <item >6:00 pm | | Cierre día 1.</item>
+        <item >---|Dom 15Dic |Google for Developers #devfestlima </item>
+        <item >8:00 am – 9:30 am | | Registro de asistentes.</item>
+        <item >9:30 am | | Conferencias y seminarios.</item>
+        <item >12:30 pm | | Almuerzo.</item>
+        <item >2:00 pm – 4:30 pm | | Conferencias y seminarios.</item>
+        <item >4:30 pm | | Sorteos, sorpresas, cierre, After Party.</item>
      </string-array>
     
+     <!--  Expositores -->
+     
+     <string-array name="arr_speakers">
+        <item >+David Chandler | Android Developer Advocate - Google | Estados Unidos</item>
+        <item >+Deborah Reyes | Performance Solutions Manager - Google | Perú</item>
+        <item >+Freddy Vega | CEO Mejorando.la - Glass Explorer | Colombia</item>
+        <item >+Maximiliano Firtman | Glass Explorer + Web + Mobile developer | Argentina</item>
+        <item >+Talia Pinto | Senior Account Manager at Google | Perú</item>
+        <item >+Nicolas Bortolotti | Developer Relations Google | Argentina</item>
+        <item >+Marco Campos | Industry Manager at Google | Perú</item>
+        <item >+Matias Molinas | Google Developer Expert - Youtube | Argentina</item>
+     </string-array>
+    
+     <!--  Sponsors -->
+      <string-array name="arr_sponsors">
+        <item >Google |  | Estados Unidos</item>
+        <item >USMP |  | Perú</item>
+        <item >GBG |  | Colombia</item>
+        <item >Google Developers|  | Argentina</item>
+        <item >Universidad del Pacífico| | Perú</item>
+        <item >SEDIPRO UNFV |  | Argentina</item>
+        <item >GBGLima | | Perú</item>
+        <item >GDGLima || Argentina</item>
+        <item >GSA PUCP|| Argentina</item>
+        <item >GSA UP|| Argentina</item>
+      </string-array>
+      
+      
     <!-- Developers -->
-    <string-array name="arr_horas_devs">
-        <item >8:00 am – 9:30 am</item>
-        <item >9:30 am</item>
-        <item >12:30 pm</item>
-        <item >2:00 pm – 4:30 pm</item>
-        <item >4:30 pm</item>
-    </string-array>
-    
+    <!-- 
+             <item >Organizadores | Google | USMP | GBG | Google Developers</item>
+           <item >Platinum | Universidad del Pacífico</item>
+           <item >Comunitarios | SEDIPRO UNFV</item> 
+    -->
     <string-array name="arr_agenda_devs">
-        <item >Registro de asistentes.</item>
-        <item >Conferencias y seminarios.</item>
-        <item >Almuerzo.</item>
-        <item >Conferencias y seminarios.</item>
-        <item >Sorteos, sorpresas, cierre, After Party.</item>
+        <item >8:00 am – 9:30 am | Registro de asistentes.</item>
+        <item >9:30 am | Conferencias y seminarios.</item>
+        <item >12:30 pm | Almuerzo.</item>
+        <item >2:00 pm – 4:30 pm | Conferencias y seminarios.</item>
+        <item >4:30 pm | Sorteos, sorpresas, cierre, After Party.</item>
      </string-array>
+     
 </resources>

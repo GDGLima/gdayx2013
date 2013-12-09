@@ -26,10 +26,15 @@ public class SpeakerAdapter extends BaseAdapter {
         mContext = c;
         arrSpeakers=Arrays.asList(mSpeakers);
     }
+    
+    public SpeakerAdapter(Context c,SpeakerVo[] data) {
+        mContext = c;
+        arrSpeakers=Arrays.asList(data);
+    }
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return mSpeakers.length;
+		return arrSpeakers.size();
 	}
 
 	@Override
@@ -94,9 +99,9 @@ public class SpeakerAdapter extends BaseAdapter {
 		new SpeakerVo(R.drawable.maximiliano, "+Maximiliano Firtman", "Glass Explorer + Web + Mobile developer"),
 		new SpeakerVo(R.drawable.freddy, "+Freddy Vega", "CEO Mejorando.la - Glass Explorer"),
 		new SpeakerVo(R.drawable.matias, "+Matias Molinas", "Google Developer Expert - Youtube"),
-		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
-		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima"),
-		new SpeakerVo(R.drawable.pic_eduardo, "Eduardo Medina", "Organizer GDG Lima")
+		new SpeakerVo(R.drawable.deborah, "+Deborah Reyes", "Performance Solutions Manager - Google"),
+		new SpeakerVo(R.drawable.pic_eduardo, "+Eduardo Medina", "Organizer GDG Lima"),
+		new SpeakerVo(R.drawable.pic_eduardo, "+Eduardo Medina", "Organizer GDG Lima")
 	};
 
 

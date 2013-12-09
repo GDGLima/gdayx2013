@@ -5,6 +5,7 @@ package com.gdglima.gdayx2013.sponsor;
 
 import com.gdglima.gdayx2013.R;
 import com.gdglima.gdayx2013.speakers.SpeakerAdapter;
+import com.gdglima.gdayx2013.utils.DevFestLimaSession;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -34,7 +35,9 @@ public class SponsorFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_sponsor, container, false);
      
         grid=(GridView)rootView.findViewById(R.id.gridSponsor);
-        SponsorAdapter adapter=new  SponsorAdapter(getActivity().getApplicationContext());
+        //SponsorAdapter adapter=new  SponsorAdapter(getActivity().getApplicationContext());
+        SponsorAdapter adapter=new  SponsorAdapter(getActivity().getApplicationContext()
+        		, DevFestLimaSession.getInstance().getArrSponsors());
         grid.setAdapter(adapter);
         
         AnimationSet set=new AnimationSet(true);

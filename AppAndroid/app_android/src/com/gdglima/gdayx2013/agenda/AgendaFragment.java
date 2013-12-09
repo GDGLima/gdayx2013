@@ -2,6 +2,7 @@ package com.gdglima.gdayx2013.agenda;
 
 import com.gdglima.gdayx2013.R;
 import com.gdglima.gdayx2013.speakers.SpeakerAdapter;
+import com.gdglima.gdayx2013.utils.DevFestLimaSession;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -23,7 +24,9 @@ public class AgendaFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_agenda, container, false);
         
         lstSchedule=(ListView)rootView.findViewById(R.id.lstSchedule);
-        ScheduleAdapter adapter=new  ScheduleAdapter(getActivity().getApplicationContext());
+       // ScheduleAdapter adapter=new  ScheduleAdapter(getActivity().getApplicationContext());
+        ScheduleAdapter adapter=new  ScheduleAdapter(getActivity().getApplicationContext(),
+        		DevFestLimaSession.getInstance().getArrBusiness());
         lstSchedule.setAdapter(adapter);
         
         return rootView;

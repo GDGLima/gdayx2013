@@ -9,6 +9,8 @@ import com.gdglima.gdayx2013.utils.ImageUtils;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,10 +28,15 @@ public class ScheduleAdapter extends BaseAdapter {
         mContext = c;
         arrSchedule=Arrays.asList(mSchedule);
     }
+    
+    public ScheduleAdapter(Context c , ScheduleVo[] data) {
+        mContext = c;
+        arrSchedule=Arrays.asList(data);
+    }
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return mSchedule.length;
+		return arrSchedule.size();
 	}
 
 	@Override
@@ -55,6 +62,7 @@ public class ScheduleAdapter extends BaseAdapter {
 			view=l.inflate(R.layout.item_schedule, parent,false);
 			
 			holder= new ScheduleViewHolder();
+			holder.view=view;
 			holder.txtHour1=(TextView)view.findViewById(R.id.txthour1);
 			holder.txtHour2=(TextView)view.findViewById(R.id.txthour2);
 			
@@ -71,7 +79,32 @@ public class ScheduleAdapter extends BaseAdapter {
 		ScheduleVo schedule =arrSchedule.get(position);
 		if(schedule!=null)
 		{
-			holder.txtHour1.setText(schedule.getHour1());
+			//new ScheduleVo(hour1, hour2, txt1, txt2, txt3)
+			//new ScheduleVo(data[0], "", data[1], "", "");
+			Log.v("CONSOLE",schedule.getHour1()+ " "+
+					schedule.getHour2() +" "+
+					schedule.getTxt1()+" "+
+					schedule.getTxt2()+" "+
+					schedule.getTxt3()
+			);
+			String title =schedule.getHour1();
+			if(title.equals("---"))
+			{
+				holder.txt1.setTextColor(mContext.getResources().getColor(R.color.color_blue));
+				holder.txt1.setTypeface(null, Typeface.BOLD);
+				holder.txtHour1.setTypeface(null, Typeface.BOLD);
+				
+				holder.txtHour1.setText(schedule.getHour2());
+				holder.view.setBackgroundColor(mContext.getResources().getColor(R.color.color_blue));
+			}else
+			{
+				holder.txtHour1.setText(schedule.getHour1());
+				holder.txt1.setTypeface(null, Typeface.NORMAL);
+				holder.txtHour1.setTypeface(null, Typeface.NORMAL);
+				
+				holder.txt1.setTextColor(mContext.getResources().getColor(R.color.color_b1));
+				holder.view.setBackgroundColor(mContext.getResources().getColor(R.color.color_w1));
+			}
 			holder.txtHour2.setText(schedule.getHour2());
 			
 			holder.txt1.setText(schedule.getTxt1());
@@ -86,6 +119,7 @@ public class ScheduleAdapter extends BaseAdapter {
 
 	static class ScheduleViewHolder
 	{
+		View view;
 		TextView txtHour1;
 		TextView txtHour2;
 		

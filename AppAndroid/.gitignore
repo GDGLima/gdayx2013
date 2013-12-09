@@ -1,5 +1,6 @@
-# extensiones #
+# extensiones / files #
 *.properties
+*.keystore
 
 # folders #
 app_android/bin/
