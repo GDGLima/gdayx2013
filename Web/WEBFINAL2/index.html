@@ -7,7 +7,11 @@
 	<meta name="description" content="Un encuentro con exitosos representantes de tecnolog&iacute;a, desarrollo y productos de Google y presentaci&oacute;n de Google Glass en Lima" lang="es-DO">
 	<title>Google for Business &amp; Developer Festival 2013 - 14 y 15 de Diciembre</title>
 	<link rel="stylesheet" type="text/css" href="css/root.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
     <style type="text/css">
 <!--
 .Estilo3 {font-size: 24px}
@@ -16,6 +20,7 @@
 .Estilo13 {background: #005B97; color: #FFFFFF; font-size: 18px; margin-bottom: 40px; border-radius: 2px; padding: 4px 10px;}
 .Estilo15 {color: #C70000}
 .Estilo16 {color: #0000FF}
+.Estilo5 {color: white; font-size: 18px; border-radius: 2px;}
 -->
     </style>
 
@@ -28,7 +33,12 @@
   ga('create', 'UA-45613028-1', 'gug.pe');
   ga('send', 'pageview');
 
-</script>
+ $(function() {
+    $( "#tabs" ).tabs({
+      event: "mouseover"
+    });
+  });
+  </script>
 
 
 </head>
@@ -291,12 +301,16 @@
   
         
   <div class="content" id="schedule">
-			<div class="wrap_content">
-			  <div class="title_setion">
-					Agenda</div>
-			  <div class="box_setion">
-                  <div class="title_calendar Estilo3">Dia 1: Google for Business</div>
-				  <ul>
+	<div class="wrap_content_tab">
+	  <div class="title_setion">Agenda</div>
+	  	<div id="tabs">
+		  <ul>
+		    <li><a href="#tabs-1" class="title_calendar Estilo5">D&iacute;a 1: Google for Business</a></li>
+		    <li><a href="#tabs-2" class="title_calendar Estilo5">D&iacute;a 2: DevFest Lima</a></li>
+		  </ul>
+		  <div id="tabs-1">
+		  		<div class="box_setion_tab">
+				  <ul style="list-style-image:url('img/gbglima.png');">
                     <li> <span>8:00 am – 9:30 am</span>: Registro de asistentes. </li>
 				    <li> <span>9:30 am</span> : Conferencias y seminarios. </li>
 				    <li> <span>12:30 pm</span> : Almuerzo. </li>
@@ -304,9 +318,11 @@
 				    <li> <span>6:00 pm</span> : Cierre d&iacute;a 1.</li>
 			      </ul>
 			      <br>
-			      <span class="country_item_speakers Estilo15">*Más detalles pr&oacute;ximamente</span></div>
-			    <div class="box_setion">
-                  <div class="title_calendar Estilo3">Dia 2: DevFest Lima</div>
+			      <span class="country_item_speakers Estilo15">*Más detalles pr&oacute;ximamente</span>
+			  </div>
+		  </div>
+		  <div id="tabs-2">
+		  		<div class="box_setion_tab">
 			      <ul>
                     <li> <span>8:00 am – 9:30 am</span>: Registro de asistentes. </li>
 			        <li> <span>9:30 am</span> : Conferencias y seminarios. </li>
@@ -314,9 +330,13 @@
 			        <li> <span>2:00 pm – 4:30 pm</span> : Conferencias y seminarios.</li>
 			        <li> <span>4:30 pm</span> : Sorteos, sorpresas, cierre, <strong>After Party</strong>.</li>
 	              </ul>
+			      <br>
+			      <span class="country_item_speakers Estilo15">*Más detalles pr&oacute;ximamente</span>
 		      </div>
-		        </div>
+		  </div>
 		</div>
+	</div>
+</div>
         
     
         
