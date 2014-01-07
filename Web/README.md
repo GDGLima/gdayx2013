@@ -1,4 +1,4 @@
-gdayx2013
+GDAYXPERU
 =========
 
 Esta es la Web Oficial del evento GDayX Lima & Devfest Lima 2013, fue desarrollado por el equipo de Front End de GDGLima:
@@ -6,6 +6,8 @@ Esta es la Web Oficial del evento GDayX Lima & Devfest Lima 2013, fue desarrolla
 @ytachi0026
 
 Para poder utilizarlo basta con descargar el template y cambiar el contenido.
+
+Ver Web: http://www.gug.pe/
 
 Si necesitan ayuda pueden encontrarnos en https://plus.google.com/u/0/103607234084788626166/posts
 
@@ -18,6 +20,8 @@ This is the Oficial Website for the event GDayX Lima & DevFestLima 2013, it was 
 @ytachi0026
 
 To use it just download the template and change the content
+
+View Website: http://www.gug.pe/
 
 If you need support you can find us on https://plus.google.com/u/0/103607234084788626166/posts
 
