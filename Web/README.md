@@ -31,7 +31,3 @@ Para poder utilizarlo basta con descargar el template y cambiar el contenido.
 Ver Demo Live: http://www.gug.pe/
 
 Si necesitan ayuda pueden encontrarnos en <br> https://plus.google.com/u/0/103607234084788626166/posts
-
-
-
-
